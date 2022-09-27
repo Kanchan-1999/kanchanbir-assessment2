@@ -1,0 +1,42 @@
+1.start
+2.Add the required import statements
+3.declare a private arraylist as list of type studentname
+4.declare variables fullname, id, a1,a2,a3
+4.declare a constructor and pass the variables to it as arguments
+  4.1.initialize the declared variables within the constructoer
+  4.2.use the method fileread() to read from the file 
+5.declare a mainmethod
+6.declare the mainmenu functions and create the menu within it usin the println statement 
+  5.1 we need to ask the user to enter a value to select a option from the menu 
+6.declare a variable option_id retreiving the value entered by the user
+7.follow the switch statement
+  7.1.case 1 return student details and marks
+  7.2.case 2 returns student details, marks along with total marks
+  7.3.case 3 returns the list of students with the total marks less than a certain threshhold
+  7.4.case 4 returns the top 10 highest and top 10 lowest marks of students
+  7.5.case 5 allows user to exit the menu
+8.declare a public arraylist where fileread() is being the returned method
+  8.1.initialize the arraylist by creating a object from it
+  8.2.use a scanner and provide the file name to it
+  8.3use a delimiter ',' to separate the data
+  8.4.declare variable unitname
+  8.5.follow the while loop: while(file.hasNextLine())
+  8.5.1.if(line.contains("unit") do
+        initialline=line
+  8.5.2.else if (line.contains("first name") do
+        data=line.split(",")
+  8.5.3.follow the if statement
+        if(data.length==4) do
+        studentmarks s1 = new studentmarks(data[0],data[1], Integer.parseInt(data[2]), Double.parseDouble(data[3]),0.0,0.0);
+        add object to the list using add method : list.add(s1);
+  8.5.4.else if (data.length ==5)do
+        list.add(new studentmarks(data[0],data[1], Integer.parseInt(data[2]), Double.parseDouble(data[3]),Double.parseDouble(data[4]),0.0));
+  8.5.5.else if (data.length==3)do
+        list.add(new studentmarks(data[0],data[1], Integer.parseInt(data[2]),0.0,0.0,0.0));
+  8.5.6.else follow the else statement
+  8.5.7.end if
+9.close the file 
+10.return the value from list using return statement 
+11.create a three methods tostring 
+   11.1return string.format() format the data within the fuction  followed by sending the data 
+12.stop
